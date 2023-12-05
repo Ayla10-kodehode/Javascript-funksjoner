@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+        <div id="text">HELLO</div>
+
+        <h2 class="unit-converter_header">Units converter</h2>
+        <section class="unit-converter"></section>
+        <input type="number" placeholder="0" title="add a whole number!" id="input">
+        <select id="units-dropdown">
+            <option value="">convert from lbs to kg</option>
+            <option value="">convert from kg to lbs</option>
+            <option value="">convert from inches to cm</option>
+            <option value="">convert from cm to inches</option>
+            <option value="">convert from miles to km</option>
+            <option value="">convert from km to miles</option>
+        </select>
+        <button onclick="convertUnit()">convert units</button>
+        <p class="result" id="result_txt"></p>
 </body>
 </html>
